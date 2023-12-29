@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { memo } from 'react'
 import TaskItem from '../components/TaskItem'
 import income from '../assets/money.svg';
 import expense from '../assets/bankruptcy.svg'
 
-const TasksContainer= React.memo(({tasklist})=>{
+const TasksContainer= ({tasklist})=>{
 
 
    return (
@@ -24,6 +24,6 @@ const TasksContainer= React.memo(({tasklist})=>{
     )
 
 
-}) 
+}
 
-export default TasksContainer
+export default memo(TasksContainer);

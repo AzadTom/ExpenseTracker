@@ -2,9 +2,32 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 import heroimg from '../assets/hero.png';
+import { useAuth } from "../contexts/AuthContext";
 
 function HeroSection() {
   const navigate = useNavigate();
+
+  const {state} = useAuth();
+  const {isLoggedIn } = state;
+
+
+  const home=()=>{
+
+    
+     if(isLoggedIn)
+     {
+        navigate("/home");
+     }
+     else
+     {
+
+       navigate("/signin");
+
+     }
+
+  }
+
+
   return (
     <>
     <header className="">
@@ -23,7 +46,7 @@ function HeroSection() {
           It's easy and free to post your thinking on any topic and connect with
           millions of readers.
         </h2>
-        <button className=" bg-[#2E2E2E] px-4 py-2 rounded-full font-medium active:scale-90 transition duration-100" onClick={()=>navigate("/home")}>
+        <button className=" bg-[#2E2E2E] px-4 py-2 rounded-full font-medium active:scale-90 transition duration-100" onClick={()=> home()}>
           Get Started
         </button>
       </div>

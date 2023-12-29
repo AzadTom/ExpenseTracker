@@ -21,8 +21,10 @@ const  TaskItem = ({ icon ,item,}) =>{
       </div>
       {/* content */}
       <div className="w-full">
-        <h2 className="text-xl sm:text-3xl font-semibold">{item.title}</h2>
-        <p>{item.type}</p>
+         <div className="flex flex-col sm:flex-row gap-2">
+         <h2 className="text-xl sm:text-3xl font-semibold">{item.title}</h2>
+        <p className={item.type=="expense"? "bg-red-600 px-4 py-2 text-white":"bg-green-600 text-white px-4 py-2"}>{item.type}</p>
+         </div>
         <p className="font-thin">{item.description}</p>
         <p>{item.amount}</p>
       </div>

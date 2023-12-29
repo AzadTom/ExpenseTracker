@@ -22,7 +22,7 @@ function Profile() {
           <span>{currentUser.email}</span>
           <div className="flex gap-4 justify-between">
             <button className="px-4 py-2 rounded bg-slate-800" onClick={()=> navigae("/home")}>Back</button>
-            <button className="px-4 py-2 rounded bg-slate-800" onClick={()=> logouthandler( )}>Logout</button>
+            <button className="px-4 py-2 rounded bg-slate-800" onClick={logouthandler}>Logout</button>
           </div>
         </div>
       </div>
