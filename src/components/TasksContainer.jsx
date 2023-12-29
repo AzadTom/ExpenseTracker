@@ -9,7 +9,7 @@ const TasksContainer= ({tasklist})=>{
    return (
       <>
        <section className='flex justify-center'>
-       <div className='max-w-[1000px] grid grid-cols-1 sm:grid-cols-2  gap-4 mx-4 my-4 sm:mx-8 md:mx-16' >
+       <div className='grid grid-cols-1 sm:grid-cols-2  gap-4 mx-4 my-4 sm:mx-8 md:mx-16' >
               {
                  tasklist.map((item)=>(
   

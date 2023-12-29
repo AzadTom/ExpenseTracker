@@ -6,7 +6,7 @@ function Btn() {
   const navigate = useNavigate( );
   return (
   <div className='flex justify-end items-center m-8 drop-shadow-sm fixed bottom-4 right-0' onClick={()=> navigate("/createtask")}>
-      <div className="bg-[#1E1E1E]  sm:hidden p-8 rounded-[50%]    ">
+      <div className="bg-[#2E2E2E]  sm:hidden p-8 rounded-[50%]    ">
           <svg
             width="22"
             height="22"
@@ -24,4 +24,4 @@ function Btn() {
   )
 }
 
-export default Btn
+export default Btn;
