@@ -54,13 +54,6 @@ function Header() {
         </div>
         {/* NavBar */}
         <div className="navbar flex items-center">
-          <nav>
-            <ul className=" gap-6 sm:flex text-sm sm:flex-row hidden">
-              <li className="font-semibold">Home</li>
-              <li>AboutUs</li>
-              <li>ContactUs</li>
-            </ul>
-          </nav>
         </div>
 
         {/* Button */}
